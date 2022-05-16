@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainGuiController">
+   <top>
+      <Pane prefHeight="76.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#9e0000" layoutX="39.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CargoD-Tracker">
+               <font>
+                  <Font name="System Bold" size="43.0" />
+               </font>
+            </Text>
+            <Label fx:id="exit" layoutX="1150.0" layoutY="29.0">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resim/d.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <left>
+      <Pane prefHeight="724.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutY="5.0" prefHeight="522.0" prefWidth="201.0" style="-fx-background-color: #AAAAAA;">
+               <children>
+                  <JFXButton fx:id="btnpage1" buttonType="RAISED" onAction="#btnpage1OnAction" prefHeight="120.0" prefWidth="250.0" ripplerFill="#cd0000" text="Kargo Listesi" textAlignment="CENTER" textFill="#282828">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnpage2" buttonType="RAISED" onAction="#btnpage2OnAction" prefHeight="120.0" prefWidth="250.0" ripplerFill="#00c298" text="Google Maps">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnpage3" onAction="#btnpage3OnAction" prefHeight="120.0" prefWidth="250.0" ripplerFill="#4a00c2" text="Kargo Durumu">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnpage4" buttonType="RAISED" onAction="#btnpage4OnAction" prefHeight="120.0" prefWidth="250.0" ripplerFill="#a8bf00" text="Kullanıcı Ayarları">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <ImageView fitHeight="218.0" fitWidth="206.0" layoutX="-2.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resim/aaaa.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="656.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane fx:id="icerikAlan" layoutY="-1.0" prefHeight="755.0" prefWidth="1000.0" AnchorPane.bottomAnchor="-30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<TabPane fx:id="aaa" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" side="RIGHT" style="-fx-background-color: #55333;" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GirisController">
+  <tabs>
+      <Tab text="Kullanici Giris">
+         <content>
+            <BorderPane prefHeight="379.0" prefWidth="611.0" style="-fx-background-color: #FFFFFF;">
+               <left>
+                  <AnchorPane prefHeight="371.0" prefWidth="250.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="772.0" fitWidth="616.0" layoutX="-4.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../resim/c.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="471.0" prefWidth="346.0" style="-fx-background-color: #5ed2bd;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="281.0" layoutY="99.0" text="KULLANİCİ ADI">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="kullanici_giris" layoutX="248.0" layoutY="139.0" prefHeight="25.0" prefWidth="181.0" promptText="Kullanici Adi" />
+                        <Label layoutX="319.0" layoutY="180.0" text="SİFRE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="sifre_giris" layoutX="248.0" layoutY="212.0" prefHeight="25.0" prefWidth="180.0" promptText="Sifrenizi Kimseyle Paylasmayin" />
+                        <Button fx:id="btnGiris" layoutX="225.0" layoutY="299.0" mnemonicParsing="false" onAction="#btnGirisOnAction" prefHeight="25.0" prefWidth="225.0" style="-fx-background-color: #FFFFFF;" text="Giris Yap">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnGirisCik" layoutX="226.0" layoutY="586.0" mnemonicParsing="false" onAction="#anaCikisOnAction" prefHeight="25.0" prefWidth="225.0" style="-fx-background-color: #FFFFFF;" text="Uygulamadan Çık">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="0.5308056872037914" endY="0.7630331753554502" startX="0.5308056872037915" startY="0.4549763033175356">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.039290934801101685" green="0.23234039545059204" blue="0.5657894611358643" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.7200000286102295" green="0.2752230167388916" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Button>
+                        <Label fx:id="lblGiris" alignment="CENTER" layoutX="218.0" layoutY="258.0" prefHeight="17.0" prefWidth="240.0" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font></Label>
+                        <ImageView fitHeight="213.0" fitWidth="292.0" layoutX="22.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resim/b.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="forgotP" defaultButton="true" layoutX="22.0" layoutY="745.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#forgotPonAction" text="Şifreni Değiştir" textAlignment="CENTER" textFill="RED" textOverrun="LEADING_WORD_ELLIPSIS" underline="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </content>
+      </Tab>
+      <Tab text="Kayıt Ol">
+         <content>
+            <BorderPane prefHeight="379.0" prefWidth="611.0" style="-fx-background-color: #FFFFFF;">
+               <left>
+                  <AnchorPane prefHeight="371.0" prefWidth="250.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="770.0" fitWidth="616.0" layoutX="-4.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../resim/a.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="364.0" prefWidth="326.0" style="-fx-background-color: #ff4f5a;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="44.0" layoutY="143.0" />
+                        <Label layoutX="366.0" layoutY="91.0" text="AD-SOYAD" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="adsoyad_sign" layoutX="253.0" layoutY="131.0" prefHeight="25.0" prefWidth="309.0" promptText="İsim ve Soyisminizi Giriniz..." />
+                        <Label layoutX="387.0" layoutY="241.0" text="SIFRE" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnkayitOl" layoutX="271.0" layoutY="474.0" mnemonicParsing="false" onAction="#btnKayitOnAction" prefHeight="27.0" prefWidth="262.0" style="-fx-background-color: #FFFFFF;" text="&gt;Sisteme Kayıt Ol&lt;">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Button>
+                        <Label layoutX="354.0" layoutY="183.0" text="KULLANICI ADI" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="sifre_sign" layoutX="263.0" layoutY="264.0" prefHeight="25.0" prefWidth="284.0" promptText="Sifrenizi Kendinize Saklayın" />
+                        <Label layoutX="358.0" layoutY="293.0" text="SIFRE TEKRAR" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="sifreTekrar_sign" layoutX="263.0" layoutY="315.0" prefHeight="25.0" prefWidth="283.0" promptText="Sifrenizi Kendinize Saklayın - Tekrar" />
+                        <Button fx:id="btnCikis" layoutX="256.0" layoutY="697.0" mnemonicParsing="false" onAction="#kayitCikisOnAction" prefHeight="27.0" prefWidth="263.0" style="-fx-background-color: #FFFFFF;" text="Uygulamadan Çık">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="0.5308056872037914" endY="0.7630331753554502" startX="0.5308056872037915" startY="0.4549763033175356">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.039290934801101685" green="0.23234039545059204" blue="0.5657894611358643" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.7200000286102295" green="0.2752230167388916" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Button>
+                        <TextField fx:id="kullanici_sign" layoutX="262.0" layoutY="210.0" prefHeight="25.0" prefWidth="286.0" promptText="Örn. yazlabproje, 100verin, pls" />
+                        <Label fx:id="lblTekrar" layoutX="304.0" layoutY="351.0" prefHeight="25.0" prefWidth="207.0" textAlignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                        <Label fx:id="lblKayit" alignment="CENTER" layoutX="231.0" layoutY="518.0" prefHeight="28.0" prefWidth="342.0" textAlignment="CENTER">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="213.0" fitWidth="292.0" layoutX="35.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resim/b.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>

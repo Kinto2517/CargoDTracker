@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #AFB83B;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.page1">
+   <children>
+      <Text fill="#8d1700" layoutX="253.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kargo Listesi ve Durumu">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableView" layoutX="53.0" layoutY="170.0" prefHeight="386.0" prefWidth="894.0">
+        <columns>
+          <TableColumn fx:id="col1" prefWidth="208.0" text="CargoID" />
+          <TableColumn fx:id="col2" prefWidth="228.0" text="CargoLocation" />
+            <TableColumn fx:id="col3" prefWidth="249.0" text="CargoStatus" />
+            <TableColumn fx:id="col4" minWidth="0.0" prefWidth="208.0" text="ClientID" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>
